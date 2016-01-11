@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/login_title_square"
+        android:drawableLeft="@mipmap/login_iv_title"
+        android:drawablePadding="5dip"
+        android:gravity="center_vertical"
+        android:padding="5dip"
+        android:text="快来查看您附近的豪车"
+        android:textColor="@color/colorMain"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="聚豪车"
+        android:textColor="@color/colorMain"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/ed_login_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:background="@null"
+        android:hint="用户"
+        android:paddingBottom="10dip"
+        android:paddingLeft="40dip"
+        android:paddingTop="10dip"
+        android:textColorHint="@color/colorTextGray"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLine" />
+
+    <EditText
+        android:id="@+id/ed_login_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:paddingBottom="10dip"
+        android:paddingLeft="40dip"
+        android:paddingTop="10dip"
+        android:textColorHint="@color/colorTextGray"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLine" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/btn_main"
+        android:text="登录"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="20dip">
+
+        <ImageView
+            android:id="@+id/iv_login_iskeep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/login_check_box_false"
+            android:clickable="true"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tv_login_iskeep"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="记住密码"
+            android:textColor="@color/colorTextGray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_forget_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="@string/forget_pass"
+            android:textColor="@color/colorMain"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_login_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dip"
+        android:clickable="true"
+        android:text="注册"
+        android:textColor="@color/colorMain"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2" />
+
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "ihardy.im"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/fastjson-1.1.46.android.jar')
+    testCompile 'junit:junit:4.12'
+    compile 'org.xutils:xutils:3.1.24'
+    //compile 'com.tencent.bugly:crashreport:1.2.8'
+    compile project(':easeUI')
+    compile project(':WheelPicker')
+    compile files('libs/fastjson-1.1.45.android.jar')
+}
